@@ -20,7 +20,7 @@ class CelebrityProblem {
 
             if (matrix[personOne][personTwo] == 1) {
                 st.push(personTwo);
-            } else if (matrix[personTwo][personOne] == 1) {
+            } else {
                 st.push(personOne);
             }
         }
