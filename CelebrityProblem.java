@@ -28,7 +28,8 @@ class CelebrityProblem {
         int expCeleb = st.pop();
 
         for (int i = 0; i < matrix.length; i++) {
-            if (i == expCeleb) continue;
+            if (i == expCeleb)
+                continue;
             if (matrix[i][expCeleb] == 0 || matrix[expCeleb][i] == 1) {
                 System.out.println("No Celebrity Exists");
                 return;
@@ -40,8 +41,10 @@ class CelebrityProblem {
 
     /**
      * we will maintain two arrays of type int say indegree and outdegree
-     * we will find the index where inDegree is equal to n - 1 and outDegree is equal to 0
+     * we will find the index where inDegree is equal to n - 1 and outDegree is
+     * equal to 0
      * than index will be our celebrity
+     * 
      * @param matrix
      */
     public static void inOutMethod(int[][] matrix) {
